@@ -48,6 +48,14 @@ public class CacheConfiguration {
             createCache(cm, com.baamtu.atelier.bank.domain.User.class.getName());
             createCache(cm, com.baamtu.atelier.bank.domain.Authority.class.getName());
             createCache(cm, com.baamtu.atelier.bank.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.baamtu.atelier.bank.domain.Bank.class.getName());
+            createCache(cm, com.baamtu.atelier.bank.domain.Bank.class.getName() + ".advisors");
+            createCache(cm, com.baamtu.atelier.bank.domain.Enterprise.class.getName());
+            createCache(cm, com.baamtu.atelier.bank.domain.Advisor.class.getName());
+            createCache(cm, com.baamtu.atelier.bank.domain.Advisor.class.getName() + ".appointments");
+            createCache(cm, com.baamtu.atelier.bank.domain.Manager.class.getName());
+            createCache(cm, com.baamtu.atelier.bank.domain.Manager.class.getName() + ".appointments");
+            createCache(cm, com.baamtu.atelier.bank.domain.Appointment.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
